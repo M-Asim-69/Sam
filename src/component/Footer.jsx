@@ -37,8 +37,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <FooterLink href="/">Home</FooterLink>
               <FooterLink href="/About">About</FooterLink>
-              <FooterLink href="/Services">Services</FooterLink>
-              <FooterLink href="/Contact">Contact</FooterLink>
+                <FooterLink href="/Contact">Contact</FooterLink>
             </ul>
           </div>
           
