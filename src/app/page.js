@@ -165,9 +165,9 @@ export default function Home() {
                     <li key={i} className="flex items-center">✅ <span className="ml-2">{feature}</span></li>
                   ))}
                 </ul>
-                <button className="mt-6 w-full bg-white text-gray-900 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all">
+              <Link href='/Contact'>  <button className="mt-6 w-full bg-white text-gray-900 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all">
                   Get In Touch
-                </button>
+                </button></Link>
               </div>
             ))}
 

@@ -9,9 +9,9 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/About", label: "About" },
-    { href: "/Contact", label: "Contact" },
-    { href: "/Refund", label: "Refunds" },
-    { href: "/Terms&Condition", label: "Terms & Conditions" },
+    { href: "/Contact", label: "Contact US" },
+    { href: "/Refund", label: "Refund & Policy" },
+    { href: "/Terms&Condition", label: "Term & Condition" },
   ];
 
   return (
