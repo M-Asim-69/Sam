@@ -37,7 +37,7 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="mt-12 text-center border-t border-gray-700 pt-6">
         <p className="text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+          &copy; {new Date().getFullYear()} SAM INVESTING SERVICE LLC. All rights reserved.
         </p>
       </div>
     </footer>

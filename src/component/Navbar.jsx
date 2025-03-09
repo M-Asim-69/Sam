@@ -20,7 +20,7 @@ export default function Navbar() {
     border border-white/20 rounded-xl p-3 shadow-lg z-50">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-lg font-bold text-white pl-4">Rankingeico</h1>
+        <h1 className="text-lg font-bold text-white pl-4">RankingEICO</h1>
 
         {/* Desktop Navigation - Aligned to Left & Made Smaller */}
         <div className="hidden md:flex space-x-4 ml-6">

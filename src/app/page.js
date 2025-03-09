@@ -1,10 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   const seoPackages = [
     {
       name: "Starter Package",
-      price: "35,000 PKR/month",
+      price: "$200/month",
       features: [
         "Targeted keywords: 10",
         "Total 3000 word count / month",
@@ -24,7 +25,7 @@ export default function Home() {
     },
     {
       name: "Advance Package",
-      price: "45,000 PKR/month",
+      price: "$350/month",
       features: [
         "Targeted keywords: 25",
         "Page optimization (10 per month)",
@@ -46,7 +47,7 @@ export default function Home() {
     },
     {
       name: "Business Package",
-      price: "65,000 PKR/month",
+      price: "$500/month",
       features: [
         "Targeted keywords: 40",
         "Page optimization (15 per month)",
@@ -68,7 +69,7 @@ export default function Home() {
     },
     {
       name: "Professional Package",
-      price: "90,000 PKR/month",
+      price: "$750/month",
       features: [
         "Targeted keywords: 50",
         "Page optimization (20 per month)",
@@ -89,7 +90,7 @@ export default function Home() {
     },
     {
       name: "Enterprise Package",
-      price: "120,000 PKR/month",
+      price: "$1000/month",
       features: [
         "Targeted keywords: 60",
         "Page optimization (30 per month)",
@@ -108,7 +109,7 @@ export default function Home() {
     },
     {
       name: "Elite Package",
-      price: "170,000 PKR/month",
+      price: "$1500/month",
       features: [
         "Targeted keywords: 75",
         "Page optimization (40 per month)",
@@ -135,7 +136,6 @@ export default function Home() {
       </header>
 
       <main className="container bg-gray-950 mx-auto pt-4 px-4 pb-26">
-        {/* Hero Section */}
         <section className="hero mb-12 relative bg-gradient-to-b from-blue-100 to-blue-300 rounded-lg shadow-lg overflow-hidden">
           <div className="relative text-center text-gray-800 py-40 px-6">
             <h2 className="text-5xl font-extrabold mb-4 text-gray-900 drop-shadow-lg">
@@ -150,27 +150,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SEO Packages */}
         <section className="packages mb-12">
           <h2 className="text-4xl font-bold mb-6 text-center text-gray-500">Our Packages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {seoPackages.map((pkg, index) => (
-              <div
-                key={index}
-                className={`relative bg-gradient-to-b ${pkg.bg} text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300`}
-              >
+              <div key={index} className={`relative bg-gradient-to-b ${pkg.bg} text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300`}>
                 {pkg.popular && (
-                  <span className="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                    Most Popular
-                  </span>
+                  <span className="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">Most Popular</span>
                 )}
                 <h3 className="text-2xl font-semibold mb-2 text-center">{pkg.name}</h3>
                 <p className="text-3xl font-bold text-center">{pkg.price}</p>
                 <ul className="mt-4 space-y-2 text-sm">
                   {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-center">
-                      ✅ <span className="ml-2">{feature}</span>
-                    </li>
+                    <li key={i} className="flex items-center">✅ <span className="ml-2">{feature}</span></li>
                   ))}
                 </ul>
                 <button className="mt-6 w-full bg-white text-gray-900 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-200 transition-all">
@@ -178,10 +170,26 @@ export default function Home() {
                 </button>
               </div>
             ))}
+
+            {/* Custom Package Card */}
+            <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-semibold mb-2 text-center">Custom Package</h3>
+              <p className="text-lg text-center text-gray-300 mb-4">Tailored SEO solutions for your unique needs.</p>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li>✅ Fully customized strategy</li>
+                <li>✅ Dedicated SEO expert</li>
+                <li>✅ Advanced competitor analysis</li>
+                <li>✅ Personalized content marketing</li>
+                <li>✅ Priority support</li>
+              </ul>
+             <Link href='/Contact'>
+             
+             <button className="mt-6 w-full bg-green-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition-all">
+                Contact Us
+              </button></Link>
+            </div>
           </div>
         </section>
-
-
       </main>
     </>
   );
