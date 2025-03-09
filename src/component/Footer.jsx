@@ -15,20 +15,6 @@ export default function Footer() {
               We are committed to delivering high-quality solutions, offering
               services that help businesses grow in the digital world.
             </p>
-            <div className="mt-4 flex space-x-4">
-              <SocialIcon href="https://facebook.com" label="Facebook">
-                <FacebookIcon />
-              </SocialIcon>
-              <SocialIcon href="https://twitter.com" label="Twitter">
-                <TwitterIcon />
-              </SocialIcon>
-              <SocialIcon href="https://linkedin.com" label="LinkedIn">
-                <LinkedinIcon />
-              </SocialIcon>
-              <SocialIcon href="https://github.com" label="GitHub">
-                <GithubIcon />
-              </SocialIcon>
-            </div>
           </div>
 
           {/* Quick Links Section (Right Side) */}
@@ -38,6 +24,8 @@ export default function Footer() {
               <FooterLink href="/">Home</FooterLink>
               <FooterLink href="/About">About</FooterLink>
                 <FooterLink href="/Contact">Contact</FooterLink>
+                <FooterLink href="/Refund">Refund</FooterLink>
+                <FooterLink href="/Terms&Condition">Terms & Condition</FooterLink>
             </ul>
           </div>
           
